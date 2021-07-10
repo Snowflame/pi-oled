@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>RPI - OLED</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#" onclick="rename('Marc')">Marc</a></li>
+      <li><a href="#" onclick="rename('Jemand')">Jemand</a></li>
+      <li><a href="#" onclick="rename('Hannes')">Hannes</a></li>
+      <li><a href="#" onclick="rename('Oyla')">Oyla</a></li>
+    </ul>
+    <script>
+      function rename(name) {
+        xhttp.open("GET", "/rename/"+name, true);
+        xhttp.send();
+      }
+    </script>
+  </body>
+</html>
